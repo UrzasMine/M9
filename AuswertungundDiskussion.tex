@@ -1,1 +1,96 @@
 \section{Auswertung}
+\subsection{Phasengeschwindigkeit bei Konstanter Kraft}
+Aus Gleichung \ref{} lassen sich die Phasengeschwindigkeiten Ausrechen Für eine Kraft von $(0,05 \pm 0,03) \text{N}$. Der Fehler der Kraft entseht hierei durch den Ablesefehler der Anzeige, sowie davon, dass der Kraftmesser in einem Bereich von $\pm 0,03$ um das messergebniss geschwankt ist. Da bei Aufgabe 2 Die Messung von Aufgabe 1 wiederholt wurde, hier aber Besser gemmessen wurde, werden die Werte von der zweiten Messung verwendet. Diese sind in Tabelle \ref{tab:F05} zu sehen.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        $\lambda/2$ (cm) & $f$  (Hz) & $c \left(\frac{\text{m}}{\text{s}} \right)$ \\
+        \midrule
+        69,0 & 14,1 & 19,45\\
+        34,5 & 30,3 & 20,90\\
+        22,5 & 44,8 & 20,16\\
+        17,5 & 58,6 & 20,51\\
+        13,8 & 73,3 & 20,23\\
+        \bottomrule
+    \end{tabular}
+    \caption{Messwerte für die Wellenlänge mit zugehörigen Frequenzen und deren Produkt die Phasengeschwidigkeit für die Zugkraft $F = 0{,}51$N}
+    \label{tab:F05}
+\end{table}
+
+Der Mittelwert der Phasengeschwindikeit ist  $\bar{c} = 2025,32\left(\frac{\text{m}}{\text{s}} \right)$ 
+
+Die Standartabweichung ist durch
+\begin{equation}
+\sigma = \sqrt{\frac{1}{5 \cdot (5 - 1)} \sum_{i=1}^{5} \left(c_i - \bar{c}\right)^2}
+\end{equation}
+
+gegeben. Es ergibt sich somit für Die Phasengeschwindikeit für eine Spannkraft von $F = 0{,}51$N
+\begin{equation}
+    \bar{c} = (20,25 \pm )\frac{\text{m}}{\text{s}}
+\end{equation}
+
+Zudem kann die phasen geschwindigkeit auch graphisch bestimmt werden. Mit Hilfe von Gleichung \ref{} ergibt sich für die Steigung $m$
+\begin{equation}
+m = \frac{c}{2L}~{.}
+\end{equation}
+
+Somit erhählt man fpr die Phasengeschwinigkeit $c$
+\begin{equation}
+c = 2 \cdot m \cdot \cdot L 
+\end{equation}
+
+Trägt man nun die frequenzen aus Tabelle \ref{tab:F05} gegen die Ordnung $n$ auf so erhält man Abbildung \ref{nf}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Bilder/n gegen f.png}
+    \caption{Ordung $n$ aufgetragen gegen die Frequenz $f$ für eine Spannkraft von $0,51$N Die Ausgleichs und grenzgeraden wurden mittels Phyton erstellt.}
+    \label{nf}
+\end{figure}
+
+Mit den Steigungen aus Abbildung \ref{nf} ergibt sich ein Fehler für $m$ von 
+
+\begin{equation}
+= \pm \left| \frac{m_1 - m_2}{2} \right|
+= \pm \left| \frac{15{,}46\,\mathrm{Hz} - 13{,}93\,\mathrm{Hz}}{2} \right|
+\approx 0{,}77  \,\mathrm{Hz} .
+\end{equation}
+
+Und für die Phasengeschwindigeit
+
+\begin{equation}
+c = 2 \cdot 14,67~\text{Hz} \cdot 0,69~\text{m} \approx 20,24 \frac{\text{m}}{\text{s}} .
+\end{equation}
+
+Der Fehler ist durch 
+\begin{equation}
+\Delta c
+= \pm \left(
+\left| \frac{\partial c}{\partial m} \right| \Delta m
++
+\left| \frac{\partial c}{\partial L} \right| \Delta L
+\right)
+= \pm 2 \cdot \left( m \cdot \Delta L + L \cdot \Delta m \right)\approx 0,58 \frac{\text{m}}{\text{s}}
+\end{equation} 
+gegeben.
+
+In Tabelle \ref{ver} sind die ergebnisse Aus den Zwei verfahren nochmals aufgelistet 
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        Verfahren & $c \left(\frac{\text{m}}{\text{s}}\right)$ & $\Delta c\left(\frac{\text{m}}{\text{s}}\right)$  (Hz) &\\
+        \midrule
+        Mittelwert & 20,25 & FEHLER\\
+        Grafisch & 20,24 & 0,58\\
+
+        \bottomrule
+    \end{tabular}
+    \caption{Die Phasengeschwindigkeiten aus den Verschiedenen Verfahren mit Fehler}
+    \label{ver}
+\end{table}
+
+Ausserdem soll die Massenbelegung des Gummiseils berechent werden. 
