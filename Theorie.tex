@@ -1,2 +1,52 @@
 \section{Theoretische Grundlagen}
 
+\subsection{Reflexion von Wellen}
+
+Die Reflexion ist eine der großen Eigenschaft von Wellen neben der Beugung, Brechung und Interferenz. Sie tritt dann auf wenn Wellen auf einen Grenzbereich ihres Ausbreitungsmediums treffen, wie zum Beispiel Wasserwellen gegen einen Gegenstand im Wasser. In dem durchzuführenden Versuch ist dies die Seilwelle die an ihrem Befestigungspunkt reflektiert wird. Wenn dieser Punkt fest an einer Stelle ist kommt es zu einem Phasensprung um $\pi$ und die Welle läuft zurück. Dadurch dass diese Welle nun um $\pi$ verschoben ist kann sie mit sich selber Konstruktiv Interferieren was dazu führt dass sich eine stehende Welle ausbildet. Wenn nun dieses feste Seilende nicht mehr an einem Punkt befestigt wäre und das Seil sich frei von oben nach unten bewegen kann gibt es keinen Phasensprung um $\pi$ und die Welle läuft in der gleichen Phase zurück. Das hat zur Folge dass es Destruktiver Interferenz führt.
+
+\subsection{Stehende Wellen}
+Wie im vorherigen Abschnitt schon erwähnt entstehen stehende Wellen wenn zwei oder mehrere Wellen positiv miteinander Interferieren, weitere Bedingungen sind dass sie eben zueinander sind und harmonische Wellen sind. Dadurch entstehen dann im Raum feste Schwingungsknoten und Schwingungsbäuche die in der Form von Maxima und Minima auftreten können. Anders als bei sich bewegenden Wellen findet bei stehenden Wellen kein Energietransport statt. Bei einer Seilwelle ist die Resonanzfrequenz durch,
+\begin{equation}
+    \centering
+    f_\text{n} = n \cdot \frac{c}{2L}
+    \label{Resonanz}
+\end{equation}
+gegeben. Hierbei ist L die Seillänge, c die Phasengeschwindigkeit der einzelnen Welle und n die Anzahl der Schwingungsbäuche wichtig ist anzumerken dass $n ~\epsilon ~ \mathbb{N}$. 
+Für Seilwellen ist die Phasengeschwindigkeit durch,
+\begin{equation}
+    \centering
+    c = \sqrt{\frac{\sigma}{\rho}} = \sqrt{\frac{F}{\rho \cdot A}} = \sqrt{\frac{F}{\mu}}
+    \label{Phasengeschwindigkeit}
+\end{equation}
+gegeben. Für diese Formel gelten folgende Eigenschaften, 
+\begin{equation}
+    \centering
+    \sigma = \frac{F}{A}
+    \label{Seilspannung}
+\end{equation}
+und
+\begin{equation}
+    \centering
+    \mu = \frac{m}{L}.
+    \label{Massenbelegung}
+\end{equation}
+Hierbei ist $\sigma$ die Seilspannung und $\mu$ die Massenbelegung des Seils. Unter der Berücksichtigung dieser Eigenschaften lässt sich nun die Eindimensionale Wellengleichung des Seils aufstellen.
+\begin{equation}
+\centering
+\frac{\partial^2 y}{\partial x^2} = \frac{\rho}{\sigma} \cdot \frac{\partial^2 y}{\partial t^2}
+    \label{Wellengl}
+\end{equation}
+Wobei $\rho$ die Dichte des Schwingungsmedium beschreibt also, 
+\begin{equation}
+    \centering
+    \rho = \frac{m}{V}.
+    \label{Dichte}
+\end{equation}
+Die Laufzeit der Seilwelle ist durch
+\begin{equation}
+    \centering
+    \Delta t = \frac{2L}{c} = 2L \cdot \sqrt{\frac{\mu}{F}}
+    \label{Laufzeit}
+\end{equation}
+gegeben.
+
