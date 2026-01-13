@@ -2,23 +2,24 @@
 
 \subsection{Reflexion von Wellen}
 
-Die Reflexion ist eine der großen Eigenschaft von Wellen neben der Beugung, Brechung und Interferenz. Sie tritt dann auf wenn Wellen auf einen Grenzbereich ihres Ausbreitungsmediums treffen, wie zum Beispiel Wasserwellen gegen einen Gegenstand im Wasser. In dem durchzuführenden Versuch ist dies die Seilwelle die an ihrem Befestigungspunkt reflektiert wird. Wenn dieser Punkt fest an einer Stelle ist kommt es zu einem Phasensprung um $\pi$ und die Welle läuft zurück. Dadurch dass diese Welle nun um $\pi$ verschoben ist kann sie mit sich selber Konstruktiv Interferieren was dazu führt dass sich eine stehende Welle ausbildet. Wenn nun dieses feste Seilende nicht mehr an einem Punkt befestigt wäre und das Seil sich frei von oben nach unten bewegen kann gibt es keinen Phasensprung um $\pi$ und die Welle läuft in der gleichen Phase zurück. Das hat zur Folge dass es Destruktiver Interferenz führt.
+Die Reflexion ist eine der großen Eigenschaften von Wellen neben der Beugung, Brechung und Interferenz. Sie tritt dann auf, wenn Wellen auf einen Grenzbereich ihres Ausbreitungsmediums treffen, wie zum Beispiel Wasserwellen auf einen Gegenstand im Wasser. In dem durchzuführenden Versuch ist dies die Seilwelle, die an ihrem Befestigungspunkt reflektiert wird. Wenn dieser Punkt fest an einer Stelle ist, kommt es zu einem Phasensprung um $\pi$ und die Welle läuft zurück. Dadurch, dass diese Welle nun um $\pi$ verschoben ist, kann sie mit sich selbst konstruktiv interferieren, was dazu führt, dass sich eine stehende Welle ausbildet. Wenn dieses feste Seilende nicht mehr an einem Punkt befestigt wäre und sich das Seil frei von oben nach unten bewegen kann, gibt es keinen Phasensprung um $\pi$ und die Welle läuft in der gleichen Phase zurück. Das hat zur Folge, dass es zu destruktiver Interferenz kommt.
 
 \subsection{Stehende Wellen}
-Wie im vorherigen Abschnitt schon erwähnt entstehen stehende Wellen wenn zwei oder mehrere Wellen positiv miteinander Interferieren, weitere Bedingungen sind dass sie eben zueinander sind und harmonische Wellen sind. Dadurch entstehen dann im Raum feste Schwingungsknoten und Schwingungsbäuche die in der Form von Maxima und Minima auftreten können. Anders als bei sich bewegenden Wellen findet bei stehenden Wellen kein Energietransport statt. Bei einer Seilwelle ist die Resonanzfrequenz durch,
+Wie im vorherigen Abschnitt schon erwähnt, entstehen stehende Wellen, wenn zwei oder mehrere Wellen positiv miteinander interferieren. Weitere Bedingungen sind, dass sie eben zueinander sind und harmonische Wellen darstellen. Dadurch entstehen dann im Raum feste Schwingungsknoten und Schwingungsbäuche, die in Form von Maxima und Minima auftreten können. Anders als bei sich bewegenden Wellen findet bei stehenden Wellen kein Energietransport statt. Bei einer Seilwelle ist die Resonanzfrequenz durch
 \begin{equation}
     \centering
     f_\text{n} = n \cdot \frac{c}{2L}
     \label{Resonanz}
 \end{equation}
-gegeben. Hierbei ist L die Seillänge, c die Phasengeschwindigkeit der einzelnen Welle und n die Anzahl der Schwingungsbäuche wichtig ist anzumerken dass $n ~\epsilon ~ \mathbb{N}$. 
-Für Seilwellen ist die Phasengeschwindigkeit durch,
+gegeben. Hierbei ist $L$ die Seillänge, $c$ die Phasengeschwindigkeit der einzelnen Welle und $n$ die Anzahl der Schwingungsbäuche. Wichtig ist anzumerken, dass $n \in \mathbb{N}$ gilt.
+
+Für Seilwellen ist die Phasengeschwindigkeit durch
 \begin{equation}
     \centering
     c = \sqrt{\frac{\sigma}{\rho}} = \sqrt{\frac{F}{\rho \cdot A}} = \sqrt{\frac{F}{\mu}}
     \label{Phasengeschwindigkeit}
 \end{equation}
-gegeben. Für diese Formel gelten folgende Eigenschaften, 
+gegeben. Für diese Formel gelten folgende Eigenschaften:
 \begin{equation}
     \centering
     \sigma = \frac{F}{A}
@@ -30,13 +31,13 @@ und
     \mu = \frac{m}{L}.
     \label{Massenbelegung}
 \end{equation}
-Hierbei ist $\sigma$ die Seilspannung und $\mu$ die Massenbelegung des Seils. Unter der Berücksichtigung dieser Eigenschaften lässt sich nun die Eindimensionale Wellengleichung des Seils aufstellen.
+Hierbei ist $\sigma$ die Seilspannung und $\mu$ die Massenbelegung des Seils. Unter Berücksichtigung dieser Eigenschaften lässt sich nun die eindimensionale Wellengleichung des Seils aufstellen:
 \begin{equation}
-\centering
-\frac{\partial^2 y}{\partial x^2} = \frac{\rho}{\sigma} \cdot \frac{\partial^2 y}{\partial t^2}
+    \centering
+    \frac{\partial^2 y}{\partial x^2} = \frac{\rho}{\sigma} \cdot \frac{\partial^2 y}{\partial t^2}
     \label{Wellengl}
 \end{equation}
-Wobei $\rho$ die Dichte des Schwingungsmedium beschreibt also, 
+Wobei $\rho$ die Dichte des Schwingungsmediums beschreibt, also
 \begin{equation}
     \centering
     \rho = \frac{m}{V}.
@@ -50,3 +51,11 @@ Die Laufzeit der Seilwelle ist durch
 \end{equation}
 gegeben.
 
+\subsection{Allgemein Wellen}
+Die Phasengeschwindigkeit einer Welle lässt sich durch, 
+\begin{equation}
+    \centering
+    c = \frac{\lambda}{f} = \frac{\omega}{k} \text{mit} \left|k\right| = \frac{2\pi}{\lambda}
+    \label{lambdaf}
+\end{equation}
+berechnen, wobei $\lambda$ die Wellenlänge der Welle beschreibt, $f$ die Frequenz der Welle, $k$ den Wellenvektor und $\omega$ die Kreisfrequenz. 
