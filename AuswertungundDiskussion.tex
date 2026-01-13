@@ -82,7 +82,7 @@ In Tabelle \ref{ver} sind die ergebnisse Aus den Zwei verfahren nochmals aufgeli
     \centering
     \begin{tabular}{ccc}
         \toprule
-        %Verfahren & $c \left(\frac{\text{m}}{\text{s}}\right)$ & $\Delta c\left(\frac{\text{m}}{\text{s}}\right)$  (Hz) &\\
+        Verfahren & $c \left(\frac{\text{m}}{\text{s}}\right)$ &$\Delta c\left(\frac{\text{m}}{\text{s}}\right)$  (Hz)\\
         \midrule
         Mittelwert & 20,25 & FEHLER\\
         Grafisch & 20,24 & 0,58\\
@@ -96,5 +96,40 @@ In Tabelle \ref{ver} sind die ergebnisse Aus den Zwei verfahren nochmals aufgeli
 Ausserdem soll die Massenbelegung des Gummiseils berechent werden. 
 \dots
 
-\subsection{Abhängigkeit der Phasengeschwidigkeit von der Massenverteilung}
+\subsection{Abhängigkeit Phasengeschwidigkeit-Massenverteilung}
 
+Zuerst werden die gemessene Phasengeschwindigkeiten für die jeweiligen Spannkräfte nach Gleichung \ref{lambdaf} berechnet. Die über alle ordnungen gemittelten Werte sind in Tablle \ref{tab:cs} abgebildet. 
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{c c c}
+\hline
+$F$ Spannkaft & Gemittelte $\bar c$ & $\sigma$\\
+\hline
+0.109 & 578.154 & 58.319 \\
+0.210 & 627.709 & 51.150 \\
+0.300 & 803.724 & 28.051 \\
+0.439 & 907.828 & 27.076 \\
+0.510 & 1012.658 & 26.633 \\
+0.600 & 1090.864 & 23.556 \\
+0.690 & 1180.644 & 15.562 \\
+0.810 & 1252.010 & 33.176 \\
+0.900 & 1290.716 & 51.575 \\
+1.000 & 1454.150 & 97.630 \\
+\hline
+\end{tabular}
+\caption{Spannkraft $F$ und die jeweiligen gemittelten Phasengeschwindigkeiten $c$}
+\label{tab:cs}
+\end{table}
+
+Trägt man diese Werte in ein Grafik auf so erhält man Abbildung \ref{inding}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Bilder/lndingens.png}
+    \caption{Die gemittelten Phasengeschwindigkeiten aufgetragen gegen die jeweilige Spannkraft. Die Fehlerbalken stellen die Standartabweichung dar. }
+    \label{inding}
+\end{figure}
