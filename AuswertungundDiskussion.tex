@@ -93,8 +93,26 @@ In Tabelle \ref{ver} sind die ergebnisse Aus den Zwei verfahren nochmals aufgeli
     \label{ver}
 \end{table}
 
-Ausserdem soll die Massenbelegung des Gummiseils berechent werden. 
-\dots
+Ausserdem soll die Massenbelegung des Gummiseils berechent werden. Diese Ist durch Gleichung \ref{Massenbelegung} gegeben mit einem Masse des Gummiseils von $m = 1,1$g und einer Länge von $66,5$cm $\pm 0,3$ cm. Daraus ergibt sich eine Massenbelegung von 
+\begin{equation}
+\mu = (1,79 \cdot 10^{-4} \pm 0,74) \frac{\text{g}}{\text{m}}
+\end{equation}  
+
+Der Fehler ist dabei durch
+\begin{equation}
+\Delta \mu = \pm \left( 
+\left| \frac{\partial \mu}{\partial m} \right| \Delta m
++
+\left| \frac{\partial \mu}{\partial L} \right| \Delta L
+\right)
+= \pm \left(
+\frac{\Delta m}{L}
++
+\frac{m}{L^2}\,\Delta L
+\right)
+\end{equation}
+
+gegeben. Wobei die Masse des Gummiseils als Fehlerlos angenommen wurde.
 
 \subsection{Abhängigkeit Phasengeschwidigkeit-Massenverteilung}
 
@@ -108,28 +126,81 @@ Zuerst werden die gemessene Phasengeschwindigkeiten für die jeweiligen Spannkr�
 \hline
 $F$ Spannkaft & Gemittelte $\bar c$ & $\sigma$\\
 \hline
-0.109 & 578.154 & 58.319 \\
-0.210 & 627.709 & 51.150 \\
-0.300 & 803.724 & 28.051 \\
-0.439 & 907.828 & 27.076 \\
-0.510 & 1012.658 & 26.633 \\
-0.600 & 1090.864 & 23.556 \\
-0.690 & 1180.644 & 15.562 \\
-0.810 & 1252.010 & 33.176 \\
-0.900 & 1290.716 & 51.575 \\
-1.000 & 1454.150 & 97.630 \\
+0.109 & 11.563 & 1.166 \\
+0.210 & 12.554 & 1.023 \\
+0.300 & 16.074 & 0.561 \\
+0.439 & 18.157 & 0.542 \\
+0.510 & 20.253 & 0.533 \\
+0.600 & 21.817 & 0.471 \\
+0.690 & 23.613 & 0.311 \\
+0.810 & 25.040 & 0.664 \\
+0.900 & 27.459 & 0.573 \\
+1.000 & 28.810 & 0.340 \\
 \hline
 \end{tabular}
 \caption{Spannkraft $F$ und die jeweiligen gemittelten Phasengeschwindigkeiten $c$}
 \label{tab:cs}
 \end{table}
 
-Trägt man diese Werte in ein Grafik auf so erhält man Abbildung \ref{inding}
+
+Wie Gleichung \ref{Phasengeschwindigkeit}erwarten lässt Steigt die Phasengischwindigkeit mit höherer Spannkraft.  Trägt man diese Werte in ein Grafik auf so erhält man Abbildung \ref{inding}. 
 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Bilder/lndingens.png}
-    \caption{Die gemittelten Phasengeschwindigkeiten aufgetragen gegen die jeweilige Spannkraft. Die Fehlerbalken stellen die Standartabweichung dar. }
+    \caption{Die gemittelten Phasengeschwindigkeiten aufgetragen gegen die jeweilige Spannkraft. Die Fehlerbalken stellen die Standartabweichung dar. Für die Ausgleichsfunktion wurde ein Wurzelansatz gewählt.}
     \label{inding}
 \end{figure}
+
+Die Werte lassen sich durch eine Wurzel Funktion mäßig gut nähern Zudem sind die Standart abweichungen bei niedrigen Spannkräften recht hoch. Dies hat den grund das bei geringeren Spannkräften es schwieriger war, den außeren Knotenpunkt genau an die Aufhängung bei dem frequenzgenerator zu legen. Wird die quadratische phasengeschwindigkeit $\bar c^2$ gegen die Spannkraft $F$ aufgetragen so erhält man Abbildung \ref{quadrat}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Bilder/c2.png}
+    \caption{Die quadratische gemittelten Phasengeschwindigkeiten aufgetragen gegen die jeweilige Spannkraft. Die Fehlerbalken stellen die Standartabweichung dar. Die ausgleichs und Grenzgeraden wurden mittels Phython.numpy erstellt.}
+    \label{quadrat}
+\end{figure}
+
+Wie erwartet ist Ein Linearer zusammenhang zu erkennen. Nun kann mit der Inversen der Steigung gemäß Gleichung  \ref{Phasengeschwindigkeit}
+\begin{equation}
+m = \frac{c^2}{F}
+\end{equation}
+
+die Massebelegung $\mu$ berechnet werden. Die Steigungen aus Abbildung \ref{quadrat} sind in Tabelle \ref{tab:m} aufgelsitet.
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{c c}
+\hline
+Gerade & Steigung $\left( m \right)$\\
+\hline
+Ausgleichsgerade & 800.89 \\
+Grenzgerade 1 & 694.44 \\
+Grenzgerade 2 & 923.63 \\
+
+\hline
+\end{tabular}
+\caption{Steigungen der Geraden aus Abbildung \ref{quadrat}}
+\label{tab:m}
+\end{table}
+
+Es ergibt sich mit den Steigung der Ausgleichsgerade eine masseverteilung von
+
+\begin{equation}
+\mu = (1,2 \pm 1,3) \frac{g}{m}
+\end{equation}
+
+wobei der Fehler durch 
+
+\begin{equation}
+\Delta m = \pm \left| \frac{m_1 - m_2}{2} \right|
+\end{equation}
+
+gegeben ist. Der Ergebnis ist hier mit einem fehler von mehr als 100\% sehr unzuverlässig. Das hier errechnet Ergebniss weicht von dem Oben errechneten wert um 
+\begin{equation}
+\frac{\mu_2}{\mu_1} = 50 \%
+\end{equation}
+
+ab. Damit sind sie zwar in der Gleichen größenordnung wechen aber trotzdem erheblich voneinander ab. Insgesamt scheint das oben errechnete ergebniss zuverlässiger da hier zum einen Der Größtfehler geringer ist, zum anderen Das ergebniss oben von genauer zu bestimmenden Größen, abhängt. Es Musste hier nur die Länge des Gummiseils im Ruhezustand gemessen werden, die Masse des Gummikabels war in der Versuchsanleitung gegeben. Bei den Punkte im Graphen gibt es einige fehlerquellen, der Größte ist vermutlich das die Wellenlänge, der stehenden Wellen, vorallem bei niedrigen Spannkräften sehr ungenau ist. Dies ist auch in Abbildung \ref{quadrat} und in Abbildung \ref{inding} zu erkennen.
